@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/cliente.css">
+    <title>Cliente</title>
+</head>
+<body>
+    <center><h3>Cadastro de usuários:</h3></center>
+
+    <form action="PHP/cliente.php" method="post">
+        <table cellspacing="0" cellpadding="5" align="center">
+            <tr>
+                <td colspan="2" align="center">
+                    <img src="IMG/logo.png" alt="logo" height="60" width="50">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><b><center>Informações pessoais:</center></b></td>        
+            </tr>
+            <tr>
+                <td>Nome:</td>
+                <td><input type="text" name="nome" placeholder="Digite nome e sobrenome" required></td>
+            </tr>
+            <tr>
+                <td>Idade:</td>
+                <td><input type="number" name="idade" placeholder="Ex: 25" required></td>
+            </tr>
+            <tr>
+                <td>CPF:</td>
+                <td><input type="text" name="CPF" placeholder="Ex: 999.999.999-99" required></td>
+            </tr>
+            <tr>
+                <td>Telefone:</td>
+                <td><input type="text" name="tel" placeholder="Ex: (47)99999-9999" required></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" placeholder="example@gmail.com" required></td>
+            </tr>
+            <tr>
+                <td>CEP:</td>
+                <td><input type="text" name="cep" placeholder="11111-111" required></td>
+            </tr>
+            <tr>
+                <td>Senha:</td>
+                <td><input type="password" name="senha" placeholder="Insira sua senha" required></td>
+            </tr>
+            <tr>
+                <td>Repita a senha:</td>
+                <td><input type="password" name="rsenha" placeholder="Repita a senha" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit">Salvar</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <br>
+    <center><address>Estudante do SENAI - Ruan de Mello Vieira</address></center>
+</body>
+</html>
