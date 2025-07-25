@@ -48,6 +48,7 @@
             <th>Prioridade</th>
             <th>Concluida</th>
         </tr>
+        
         <?php foreach($lista_tarefas as $tarefa) : ?>
             <tr>
                 <td><?php echo $tarefa['nome']; ?></td>

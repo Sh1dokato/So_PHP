@@ -1,5 +1,6 @@
 <?php
 session_start();
+    include "banco.php";
 
     if (isset($_GET['nome']) && $_GET['nome'] != '') {
         $tarefa = array();
@@ -24,13 +25,11 @@ session_start();
             } else {
                     $tarefa['concluida'] = '';
             }
-        $_SESSION['lista_tarefas'] [] = $tarefa;
-}
-
-    if (array_key_exists('lista_tarefas', $_SESSION)) {
-        $lista_tarefas = $_SESSION['lista_tarefas'];
-    } else {
-        $lista_tarefas = [];
+        gravar_tarefa($conexao, $tarefa);
     }
-include "template.php"
+
+
+    
+
+include "template.php";
 ?>
